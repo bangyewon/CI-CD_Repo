@@ -7,7 +7,7 @@ ENTRYPOINT ["top", "-b"]
 FROM openjdk:17
 
 # 인자 설정 - JAR_File
-ARG JAR_FILE=build/libs/*.jar
+ARG JAR_FILE=./build/libs/docker-0.0.1-SNAPSHOT.jar
 
 # jar 파일 복제
 COPY ${JAR_FILE} app.jar
